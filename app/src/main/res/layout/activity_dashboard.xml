@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/mainlayout"
+        android:layout_marginBottom="100dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="current temperature"
+            tools:layout_editor_absoluteX="155dp"
+            tools:layout_editor_absoluteY="172dp"
+            android:layout_marginBottom="50dp"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="current feed interval"
+            tools:layout_editor_absoluteX="179dp"
+            tools:layout_editor_absoluteY="224dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settingslayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainlayout"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="feed manually"
+            tools:layout_editor_absoluteX="127dp"
+            tools:layout_editor_absoluteY="462dp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="settings"
+            tools:layout_editor_absoluteX="151dp"
+            tools:layout_editor_absoluteY="523dp" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="logout"
+            tools:layout_editor_absoluteX="159dp"
+            tools:layout_editor_absoluteY="605dp" />
+    </LinearLayout>
+
+</RelativeLayout>
